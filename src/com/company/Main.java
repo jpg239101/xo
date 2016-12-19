@@ -7,7 +7,17 @@ public class Main {
 	// write your code here
      Scanner sc = new Scanner(System.in);
 
-        System.out.println("Give a coordinate on the board \n  1 2 3 \n1| | | |\n2| | | |\n3| | | |");
-        
+
+
+
+
+
+        System.out.println("Give a x coordinate on the board \n  1 2 3 \n1| | | |\n2| | | |\n3| | | |");
+        int x = sc.nextInt();
+        System.out.println("Give a y coordinate on the board \n  1 2 3 \n1| | | |\n2| | | |\n3| | | |");
+        int y = sc.nextInt();
+
+
+
     }
 }
