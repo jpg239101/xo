@@ -4,9 +4,9 @@ package com.company;
  * Created by jg101 on 12/19/16.
  */
 public class Board {
-boolean [] c = new boolean[9];
 
-    public String[] plot(int inx, int iny,boolean turn){
+
+    public static String[] plot(int inx, int iny,boolean turn){
 
         String [] prin = new String[3];
         prin[0] = "| | | |";
@@ -38,12 +38,27 @@ boolean [] c = new boolean[9];
                 bolI = bolI + 2;
                 break;
         }
-
-            switch (bolI){
+        switch (bolI){
                 case 0: prin[0].replace(prin[0].charAt(1),mark);
                     break;
                 case 1: prin[0].replace(prin[0].charAt(3),mark);
+                    break;
+                case 2: prin[0].replace(prin[0].charAt(3),mark);
+                    break;
+                case 3: prin[0].replace(prin[1].charAt(1),mark);
+                    break;
+                case 4: prin[0].replace(prin[1].charAt(3),mark);
+                    break;
+                case 5: prin[0].replace(prin[1].charAt(3),mark);
+                    break;
+                case 6: prin[2].replace(prin[0].charAt(1),mark);
+                    break;
+                case 7: prin[2].replace(prin[0].charAt(3),mark);
+                    break;
+                case 8: prin[2].replace(prin[0].charAt(3),mark);
+                    break;
             }
+
 
 
 
